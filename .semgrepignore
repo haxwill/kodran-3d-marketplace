@@ -1,0 +1,9 @@
+﻿.env
+.env.*
+*-report.json
+gitleaks-report.json
+semgrep-report.json
+scripts/
+e2e/
+dist/
+node_modules/

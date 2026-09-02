@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build artifacts
+dist/
+dist-ssr/
+*.local
+vite.config.js.timestamp-*
+.system_generated/
+
+# Environment secrets & credentials
+.env
+.env.*
+!.env.example
+.data/
+*.pem
+*.key
+*.cert
+*.pfx
+*.pkcs12
+
+# Local Redis & database dumps
+dump.rdb
+*.rdb
+
+# Logs & process files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test artifacts & Playwright reports
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+coverage/
+*.lcov
+*-report.json
+gitleaks-report.json
+semgrep-report.json
+zap-report*
+zap-results/
+
+# Editor & OS metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
