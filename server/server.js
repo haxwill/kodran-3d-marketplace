@@ -198,8 +198,8 @@ const resetFailedLogin = async (ip, identifier) => {
   }
 };
 
-// Test helper: reset rate limits during automated E2E tests (only in non-production)
-if (process.env.NODE_ENV !== 'production') {
+// Test helper: reset rate limits during automated E2E tests (only in non-production or test mode)
+if (process.env.NODE_ENV !== 'production' || process.env.ENABLE_TEST_HELPERS === 'true') {
   app.post('/api/test/reset-rate-limit', async (req, res) => {
     await sessionManager.clearAllRateLimits();
     res.json({ success: true, message: 'Rate limits cleared for testing.' });

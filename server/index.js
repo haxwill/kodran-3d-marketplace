@@ -3,6 +3,7 @@ import path from 'path';
 import apiApp from './server.js';
 
 const app = express();
+app.disable('x-powered-by');
 const PORT = process.env.PORT || 3000;
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
 
