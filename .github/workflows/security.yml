@@ -108,4 +108,4 @@ jobs:
       - name: Playwright E2E Security Regression Suite
         env:
           ENABLE_TEST_HELPERS: 'true'
-        run: npx playwright test e2e/admin-auth-security.spec.js
+        run: npx playwright test e2e/admin-auth-security.spec.js --project=chromium-desktop
